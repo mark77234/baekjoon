@@ -35,9 +35,10 @@ while queue:
         if 0 <= nx < n and 0 <= ny < m and visited[nx][ny] == 0:
             if campus[nx][ny] == "X":
                 continue
-            visited[nx][ny] = 1
+
             if campus[nx][ny] == "P":
                 cnt += 1
+            visited[nx][ny] = 1
             queue.append([nx, ny])
 
 
